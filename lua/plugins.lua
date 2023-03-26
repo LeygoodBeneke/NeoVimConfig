@@ -10,7 +10,6 @@ packer.startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     use "windwp/nvim-autopairs"
     use 'lewis6991/gitsigns.nvim'
-    use { "catppuccin/nvim", as = "catppuccin" }
     use "williamboman/nvim-lsp-installer"
     use 'neovim/nvim-lspconfig'
     use "williamboman/mason.nvim"
@@ -22,6 +21,11 @@ packer.startup(function(use)
     use 'nvim-treesitter/nvim-treesitter'
     use 'feline-nvim/feline.nvim'
     use "akinsho/toggleterm.nvim"
+
+    use { "ellisonleao/gruvbox.nvim" }
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+
 end)
 
 require("toggleterm").setup({

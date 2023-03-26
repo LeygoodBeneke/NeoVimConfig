@@ -17,6 +17,20 @@ local one_monokai = {
 	dark_red = "#f75f5f",
 }
 
+local gruvbox = {
+    fg = "#7c6f64",
+	bg = "#eee",
+	green = "#98971a",
+	yellow = "#d79921",
+	purple = "#d3869b",
+	orange = "#d65d0e",
+	peanut = "#f6d5a4",
+	red = "#cc341d",
+	aqua = "#458588",
+	darkblue = "#1d2021",
+	dark_red = "#cc241d",
+}
+
 local vi_mode_colors = {
 	NORMAL = "green",
 	OP = "green",
@@ -228,6 +242,6 @@ local components = {
 
 feline.setup({
 	components = components,
-	theme = one_monokai,
+	theme = gruvbox,
 	vi_mode_colors = vi_mode_colors,
 })
