@@ -27,3 +27,5 @@ vim.opt.si = true
 vim.opt.wrap = false
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.shell = '/bin/bash'
+
+vim.api.nvim_set_option("clipboard","unnamed")

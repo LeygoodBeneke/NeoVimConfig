@@ -25,6 +25,18 @@ packer.startup(function(use)
     use { "ellisonleao/gruvbox.nvim" }
     use { "catppuccin/nvim", as = "catppuccin" }
     use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+    use 'navarasu/onedark.nvim'
+    use 'Shatur/neovim-ayu'
+
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use({ "iamcco/markdown-preview.nvim",
+      run = "cd app && npm install",
+      setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+      ft = { "markdown" },
+    })
 
 end)
 

@@ -2,9 +2,26 @@
 --    flavour = "mocha",
 --    transparent_background = true
 --}
- require('gruvbox').setup({
-     transparent_mode = true,
- })
+--require('gruvbox').setup({
+--   transparent_mode = true,
+--})
 
---vim.cmd.colorscheme "github-theme"
-vim.cmd("colorscheme gruvbox")
+
+require('ayu').setup({
+    overrides = {
+        Normal = { bg = "None" },
+        ColorColumn = { bg = "None" },
+        SignColumn = { bg = "None" },
+        Folded = { bg = "None" },
+        FoldColumn = { bg = "None" },
+        CursorLine = { bg = "None" },
+        CursorColumn = { bg = "None" },
+        WhichKeyFloat = { bg = "None" },
+        VertSplit = { bg = "None" },
+    },
+})
+
+require('ayu').colorscheme()
+-- require('onedark').load()
+
+-- vim.cmd("colorscheme gruvbox")
