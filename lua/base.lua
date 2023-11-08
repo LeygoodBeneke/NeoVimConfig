@@ -15,7 +15,7 @@ vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
-vim.opt.backupskip = { '/tmp/*', '/private/tmp/*' }
+vim.opt.backupskip = {'/tmp/*', '/private/tmp/*'}
 vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true
 vim.opt.smarttab = true
@@ -25,7 +25,7 @@ vim.opt.tabstop = 4
 vim.opt.ai = true
 vim.opt.si = true
 vim.opt.wrap = true
-vim.opt.backspace = { 'start', 'eol', 'indent' }
+vim.opt.backspace = {'start', 'eol', 'indent'}
 vim.opt.shell = '/bin/bash'
 
-vim.api.nvim_set_option("clipboard","unnamed")
+vim.api.nvim_set_option("clipboard", "unnamed")
