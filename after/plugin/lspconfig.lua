@@ -2,7 +2,10 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 require('lspconfig').pylsp.setup {capabilities = capabilities}
 require('lspconfig').clangd.setup {capabilities = capabilities}
+local jdtls = require('lspconfig').jdtls
+jdtls.setup {capabilities = capabilities}
 
+vim.keymap.set('n', '<C-o>', jdtls.organize_imports, {silent = true})
 local pid = vim.fn.getpid()
 -- On linux/darwin if using a release build, otherwise under scripts/OmniSharp(.Core)(.cmd)
 local omnisharp_bin = "omnisharp"
